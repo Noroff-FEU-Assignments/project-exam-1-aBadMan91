@@ -1,0 +1,16 @@
+.about-container {
+  background-color: #0b515f;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.about-left {
+  flex: 1;
+}
+
+.about-right {
+  flex: 2;
+}

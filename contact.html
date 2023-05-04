@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Contact me" />
+    <title>AleksTechStuff | Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/contact.css" rel="stylesheet" />
+    <link href="css/media.css" rel="stylesheet" />
+    <script src="js/contact.js" defer></script>
+  </head>
+  <body>
+    <header class="header-nav">
+      <div class="header-name-list">
+        <div class="header-name">
+          <p>AleksTechStuff</p>
+        </div>
+        <label for="hamburger-menu" title="Hamburger menu" class="burger-menu"
+          ><i class="fas fa-bars"></i
+        ></label>
+        <input type="checkbox" id="hamburger-menu" />
+        <nav class="nav-list">
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/contact.html" class="active">Contact</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/posts.html">Posts</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <div class="contact-us">
+        <h1>Contact Us</h1>
+        <div id="contactMessage">
+          We have recieved your message and will reply as fast as we can.
+        </div>
+        <div class="concact-form_parent">
+          <form id="contactForm">
+            <div>
+              <p>* Required</p>
+            </div>
+            <div class="contact-form_child">
+              <div class="name-grid">
+                <label
+                  ><p>Name: *</p>
+                  <input
+                    name="name"
+                    id="name"
+                    type="textContact"
+                    placeholder="Minimum 5 characters..."
+                /></label>
+                <div class="form-error" id="nameError">
+                  Enter your name with 5 characters or more
+                </div>
+              </div>
+              <div class="email-grid">
+                <label>
+                  <p>Email: *</p>
+                  <input
+                    name="email"
+                    id="email"
+                    type="textContact"
+                    placeholder="Enter your email here..."
+                  />
+                </label>
+                <div class="form-error" id="emailError">
+                  You must enter a valid email address
+                </div>
+              </div>
+              <div class="subject-grid">
+                <label>
+                  <p>Subject: *</p>
+                  <input
+                    name="subject"
+                    id="subject"
+                    type="textContact"
+                    placeholder="Minimum 15 characters..."
+                  />
+                </label>
+                <div class="form-error" id="subjectError">
+                  You must enter 15 characters or more
+                </div>
+              </div>
+              <div class="message-grid">
+                <label for="message"
+                  ><p>Message: *</p>
+                  <textarea
+                    name="message"
+                    id="message"
+                    placeholder="Write your message here, minimum 25 characters..."
+                    class="message-textarea"
+                  ></textarea>
+                </label>
+                <div class="form-error" id="messageError">
+                  You must enter 25 characters or more
+                </div>
+              </div>
+            </div>
+            <button class="form-button">Send Message</button>
+          </form>
+        </div>
+        <div>
+          <button
+            onclick="window.location.href='index.html'"
+            class="contact-back_home"
+          >
+            Back to Home
+          </button>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

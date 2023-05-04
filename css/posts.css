@@ -1,0 +1,10 @@
+.container {
+  padding-top: 2rem;
+}
+
+.post-list {
+  display: grid;
+}
+
+.posts {
+}

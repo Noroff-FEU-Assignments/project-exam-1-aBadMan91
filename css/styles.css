@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #0e2f35;
+  color: #fff;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas:
+    "header header"
+    "main main"
+    "footer footer";
+}
+
+.container {
+  margin: auto;
+}
+
+header {
+  grid-area: header;
+}
+
+header a {
+  color: #fff;
+}
+
+main {
+  grid-area: main;
+}
+
+.right {
+  grid-area: right;
+}
+
+footer {
+  grid-area: footer;
+  text-align: center;
+}
+
+header,
+footer {
+  background-color: #0b515f;
+  z-index: 9;
+}
