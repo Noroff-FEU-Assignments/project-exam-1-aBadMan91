@@ -15,6 +15,8 @@
     <link href="css/styles.css" rel="stylesheet" />
     <link href="css/index.css" rel="stylesheet" />
     <link href="css/media.css" rel="stylesheet" />
+    <script src="js/postsright.js" defer type="module"></script>
+    <script src="js/index.js" defer type="module"></script>
   </head>
   <body>
     <header class="header-nav">
@@ -37,9 +39,16 @@
       </div>
     </header>
     <main class="container">
-      <h1>Welcome to my Tech blog</h1>
-      <div class="post-highlighted"></div>
-      <div class="post-list"></div>
+      <section class="highlighted">
+        <h1>Welcome to my Tech blog</h1>
+        <div class="highlighted-posts-list"></div>
+      </section>
+      <section class="latest-posts">
+        <h2>Latest Posts</h2>
+        <div class="carousel-wrapper">
+          <div class="carousel-slider"></div>
+        </div>
+      </section>
     </main>
     <footer></footer>
   </body>

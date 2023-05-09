@@ -1,10 +1,17 @@
 .about-container {
   background-color: #0b515f;
+  padding: 1rem;
+  border-radius: 1rem;
 }
 
 .about {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+}
+
+.about img {
+  max-width: 550px;
 }
 
 .about-left {

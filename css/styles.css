@@ -20,6 +20,11 @@ body {
   margin: auto;
 }
 
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
 header {
   grid-area: header;
 }
@@ -30,10 +35,6 @@ header a {
 
 main {
   grid-area: main;
-}
-
-.right {
-  grid-area: right;
 }
 
 footer {
