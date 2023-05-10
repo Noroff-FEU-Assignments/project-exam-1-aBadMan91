@@ -6,6 +6,27 @@
     max-width: 600px;
   }
 
+  .slider-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .prev-btn,
+  .next-btn {
+    padding: 5px 10px;
+  }
+
+  .post {
+    flex: 0 0 calc(75% - 20px);
+    padding: 10px;
+  }
+
+  .post img {
+    width: 50%;
+  }
+
   .contact-form_child {
     display: grid;
     grid-gap: 2rem;
@@ -33,10 +54,38 @@
   .container {
     max-width: 800px;
   }
+
+  .carousel-wrapper {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .carousel-slider {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .post {
+    flex: 0 0 calc(50% - 20px);
+    padding: 10px;
+  }
+
+  .post img {
+    width: 100%;
+  }
 }
 
 @media (min-width: 1144px) {
   .container {
     max-width: 1144px;
+  }
+
+  .post {
+    flex: 0 0 25%;
+    padding: 10px;
+  }
+
+  .post img {
+    width: 100%;
   }
 }
