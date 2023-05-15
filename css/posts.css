@@ -2,12 +2,16 @@
   padding-top: 2rem;
 }
 
-.posts {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  grid-gap: 50px;
+.per-page {
+  margin-bottom: 1rem;
 }
 
-.posts img {
-  width: 380px;
+.posts {
+  display: grid;
+}
+
+.post {
+  background-color: #0b515f;
+  padding: 10px;
+  border-radius: 10px;
 }

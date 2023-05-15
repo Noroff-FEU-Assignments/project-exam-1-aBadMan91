@@ -18,13 +18,18 @@
     padding: 5px 10px;
   }
 
-  .post {
+  .post-index {
     flex: 0 0 calc(75% - 20px);
     padding: 10px;
   }
 
-  .post img {
-    width: 50%;
+  .post-index img {
+    width: 75%;
+  }
+
+  .other-posts {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
   }
 
   .contact-form_child {
@@ -48,6 +53,11 @@
   .message-textarea {
     width: 200%;
   }
+
+  .posts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-gap: 50px;
+  }
 }
 
 @media (min-width: 800px) {
@@ -65,12 +75,12 @@
     transition: transform 0.3s ease-in-out;
   }
 
-  .post {
+  .post-index {
     flex: 0 0 calc(50% - 20px);
     padding: 10px;
   }
 
-  .post img {
+  .post-index img {
     width: 100%;
   }
 }
@@ -80,12 +90,17 @@
     max-width: 1144px;
   }
 
-  .post {
+  .post-index {
     flex: 0 0 25%;
     padding: 10px;
   }
 
-  .post img {
+  .post-index img {
     width: 100%;
+  }
+
+  .posts {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-gap: 50px;
   }
 }

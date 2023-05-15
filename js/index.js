@@ -27,8 +27,8 @@ fetchPosts(perPageUrl);
 function createHtml(posts) {
     posts.forEach(function(post) {
         postContainer.innerHTML += `
-            <div class="post">
-                <a href="posts/postspecific.html?id=${post.id}">
+            <div class="post-index">
+                <a href="posts/postspecific.html?id=${post.id}&name=${post.title.rendered}">
                     <img src="${post.featured_media_src_url}" alt="${post.title.rendered}" class="carousel-thumbnail">
                     <p>${post.title.rendered}</p>
                 </a>

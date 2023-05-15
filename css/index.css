@@ -10,12 +10,12 @@
   transition: transform 0.3s ease-in-out;
 }
 
-.post {
+.post-index {
   flex: 0 0 100%;
   padding: 10px;
 }
 
-.post img {
+.post-index img {
   width: 50%;
 }
 
@@ -31,4 +31,35 @@
   border-radius: 5px;
   border-style: none;
   cursor: pointer;
+}
+
+.other-posts {
+  display: grid;
+  background-color: #0b515f;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.other-post-image {
+  grid-column: 1;
+}
+
+.other-post-image img {
+  border-radius: 10px;
+}
+
+.other-post-text {
+  grid-column: 2;
+}
+
+.click-more-posts {
+  font-size: 1rem;
+  padding: 5px 10px;
+  background-color: #0b515f;
+  color: #fff;
+  border-radius: 5px;
+  border-style: outset;
+  float: right;
 }
