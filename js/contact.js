@@ -34,16 +34,26 @@ function validateContactForm(event) {
         subjectError.style.display = "block";
     }
 
-    if (checkLength(subject.value, 25) === true) {
+    if (checkLength(message.value, 25) === true) {
         messageError.style.display = "none";
     }
     else {
         messageError.style.display = "block";
     }
 
-    contactMessage.classList.add('show');
+    if (
+        checkLength(name.value, 5) === true,
+        validateEmail(email.value) === true,
+        checkLength(subject.value, 15) === true,
+        checkLength(message.value, 25) === true
+    ) {
+        contactMessage.classList.add('show');
+        contactForm.reset();
 
-    contactForm.reset();
+        setTimeout(function(){
+            window.location.reload();
+         }, 5000);
+    }
 }
 
 contactForm.addEventListener("submit", validateContactForm);

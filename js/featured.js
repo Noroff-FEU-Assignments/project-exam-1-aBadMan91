@@ -1,8 +1,8 @@
 const baseUrl = "https://techstuff.aleksnord.no/wp-json/wp/v2/posts";
 
-const perPageUrl = "https://techstuff.aleksnord.no/wp-json/wp/v2/posts?tags=14&per_page=4";
+const perPageUrl = "https://techstuff.aleksnord.no/wp-json/wp/v2/posts?tags=13&per_page=1";
 
-const postContainer = document.querySelector(".more-posts");
+const postContainer = document.querySelector(".featured");
 
 async function fetchPosts(url) {
 
@@ -27,16 +27,15 @@ fetchPosts(perPageUrl);
 function createHtml(posts) {
     posts.forEach(function(post) {
         postContainer.innerHTML += `
-            <div class="other-posts">
-                <div class="other-post-image">
+            <div class="featured-post">
+                <div class="featured-post-image">
                     <a href="posts/postspecific.html?id=${post.id}&name=${post.title.rendered}">
-                        <img src="${post.featured_media_src_url}" alt="${post.title.rendered}" class="carousel-thumbnail">
+                        <img src="${post.featured_media_src_url}" alt="${post.title.rendered}" class="featured-image">
                     </a>
                 </div>
-                <div class="other-post-text">
+                <div class="featured-post-text">
                     <a href="posts/postspecific.html?id=${post.id}">
-                        <h4>${post.title.rendered}</h4>
-                        <p>${post.excerpt.rendered}</p>
+                        <h3>${post.title.rendered}</h3>
                     </a>
                 </div>
             </div>`;

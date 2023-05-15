@@ -21,3 +21,55 @@
   margin-bottom: 10px;
   padding: 8px;
 }
+
+.form-button {
+  background-color: #0b515f;
+  color: #fff;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #bac5cf;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  cursor: pointer;
+  font-size: 1rem;
+  float: right;
+}
+
+.form-error {
+  display: none;
+  color: red;
+  background-color: #fff;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  padding: 3px;
+  text-align: center;
+  border-radius: 3px;
+}
+
+#contactMessage {
+  display: none;
+}
+
+#contactMessage.show {
+  display: block;
+  background-color: #4e8010;
+  padding: 1rem;
+  color: #fff;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.contact-back_home {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 10px;
+  background-color: #0b515f;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 1rem;
+  border: 1px solid #bac5cf;
+  padding: 5px;
+  cursor: pointer;
+}
