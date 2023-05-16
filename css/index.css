@@ -4,7 +4,7 @@
 }
 
 .welcome-index h1 {
-  padding: 20px;
+  padding: 1rem;
 }
 
 .featured-post {
@@ -28,18 +28,18 @@
 .carousel-slider {
   display: flex;
   transition: transform 0.3s ease-in-out;
+  gap: 5px;
+  padding: 5px;
 }
 
 .post-index {
-  flex: 0 0 100%;
-  padding: 10px;
-}
-
-.post-index img {
-  width: 50%;
+  flex: 0 0 calc(75% - 10px);
 }
 
 .slider-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-top: 10px;
 }
 
@@ -55,24 +55,11 @@
 }
 
 .other-posts {
-  display: grid;
   background-color: #0b515f;
-  padding: 10px;
+  padding: 1rem;
   border-radius: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
-}
-
-.other-post-image {
-  grid-column: 1;
-}
-
-.other-post-image img {
-  border-radius: 10px;
-}
-
-.other-post-text {
-  grid-column: 2;
 }
 
 .click-more-posts {

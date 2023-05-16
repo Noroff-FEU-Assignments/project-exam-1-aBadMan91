@@ -1,4 +1,7 @@
 @media (min-width: 360px) {
+  .container {
+    max-width: 360px;
+  }
 }
 
 @media (min-width: 600px) {
@@ -6,11 +9,24 @@
     max-width: 600px;
   }
 
-  .slider-controls {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  header label {
+    display: none;
+  }
+
+  nav {
+    display: block;
+    position: static;
+  }
+
+  .featured-post {
+    background-color: #0b515f;
+    border-radius: 10px;
     margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .featured-post h3 {
+    padding: 0px 0px 20px 10px;
   }
 
   .prev-btn,
@@ -20,16 +36,11 @@
 
   .post-index {
     flex: 0 0 calc(75% - 20px);
-    padding: 10px;
+    padding: 1rem;
   }
 
-  .post-index img {
-    width: 75%;
-  }
-
-  .other-posts {
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
+  .contact-us {
+    width: 600px;
   }
 
   .contact-form_child {
@@ -52,6 +63,7 @@
 
   .message-textarea {
     width: 200%;
+    resize: none;
   }
 
   .posts {
@@ -77,11 +89,25 @@
 
   .post-index {
     flex: 0 0 calc(50% - 20px);
-    padding: 10px;
+    padding: 1rem;
   }
 
   .post-index img {
     width: 100%;
+  }
+
+  .other-posts {
+    display: flex;
+    align-items: center;
+    grid-gap: 1rem;
+  }
+
+  .other-post-image {
+    flex: 50%;
+  }
+
+  .other-post-text {
+    flex: 50%;
   }
 }
 
@@ -92,7 +118,7 @@
 
   .post-index {
     flex: 0 0 25%;
-    padding: 10px;
+    padding: 1rem;
   }
 
   .post-index img {
@@ -102,5 +128,21 @@
   .posts {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     grid-gap: 50px;
+  }
+
+  .about-container {
+    background-color: #0b515f;
+    display: flex;
+    padding: 1rem;
+    border-radius: 0 0 1rem 1rem;
+    gap: 1rem;
+  }
+
+  .about-text {
+    flex: 1;
+  }
+
+  .about-image {
+    flex: 1;
   }
 }

@@ -1,23 +1,14 @@
-.about-container {
+.about h1 {
   background-color: #0b515f;
   padding: 1rem;
-  border-radius: 1rem;
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 0;
 }
 
-.about {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 2rem;
-}
-
-.about img {
-  max-width: 550px;
-}
-
-.about-left {
-  flex: 1;
-}
-
-.about-right {
-  flex: 2;
+.about-container {
+  background-color: #0b515f;
+  display: flex;
+  padding: 1rem;
+  border-radius: 0 0 10px 10px;
+  gap: 1rem;
 }
