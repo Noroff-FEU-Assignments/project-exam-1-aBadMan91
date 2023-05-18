@@ -15,28 +15,34 @@
     <link href="css/styles.css" rel="stylesheet" />
     <link href="css/index.css" rel="stylesheet" />
     <link href="css/media.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/b318972c4d.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="js/featured.js" defer type="module"></script>
     <script src="js/otherposts.js" defer type="module"></script>
     <script src="js/index.js" defer type="module"></script>
   </head>
   <body>
     <header class="header-nav">
-      <div class="header-name-list">
-        <div class="header-name">
-          <p>AleksTechStuff</p>
+      <div class="header-nav_row">
+        <div class="header-name-list">
+          <div class="header-name">
+            <a href="/index.html">AleksTechStuff</a>
+          </div>
+          <label for="hamburger-menu" title="Hamburger menu"
+            ><i class="fas fa-bars"></i
+          ></label>
+          <input type="checkbox" id="hamburger-menu" />
+          <nav>
+            <ul>
+              <li><a href="/index.html" class="active">Home</a></li>
+              <li><a href="/contact.html">Contact</a></li>
+              <li><a href="/about.html">About</a></li>
+              <li><a href="/posts.html">Posts</a></li>
+            </ul>
+          </nav>
         </div>
-        <label for="hamburger-menu" title="Hamburger menu" class="burger-menu"
-          ><i class="fas fa-bars"></i
-        ></label>
-        <input type="checkbox" id="hamburger-menu" />
-        <nav class="nav-list">
-          <ul>
-            <li><a href="/index.html" class="active">Home</a></li>
-            <li><a href="/contact.html">Contact</a></li>
-            <li><a href="/about.html">About</a></li>
-            <li><a href="/posts.html">Posts</a></li>
-          </ul>
-        </nav>
       </div>
     </header>
     <main class="container">

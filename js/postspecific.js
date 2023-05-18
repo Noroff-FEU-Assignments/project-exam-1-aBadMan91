@@ -6,7 +6,7 @@ const id = params.get("id");
 
 const name = params.get("name");
 
-const url = "https://techstuff.aleksnord.no/wp-json/wp/v2/posts/" + id +  "?_embed=author";
+const url = "https://techstuff.aleksnord.no/wp-json/wp/v2/posts/" + id;
 
 // const urlMedia = "https://techstuff.aleksnord.no/wp-json/wp/v2/media";
 

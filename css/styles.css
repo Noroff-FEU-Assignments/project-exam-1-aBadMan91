@@ -75,17 +75,70 @@ img {
   border-radius: 10px;
 }
 
+nav {
+  display: none;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 50px;
+  border-radius: 0.5rem;
+}
+
+nav ul {
+  padding: 0px;
+}
+
+nav li {
+  display: inline-block;
+  padding: 1rem;
+  font-size: large;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+#hamburger-menu:checked ~ nav {
+  display: block;
+  background-color: #0b515f;
+}
+
+.fas,
+.fa-bars {
+  cursor: pointer;
+  padding-right: 50px;
+}
+
 .header-nav {
+  position: fixed;
+  width: 100%;
+}
+
+.header-nav_row {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .header-name-list {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .header-name {
+  padding: 1rem;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.active {
+  text-decoration: underline;
 }
 
 .container {
   margin: 0 auto;
-  padding-top: 1rem;
+  padding-top: 4rem;
   padding-bottom: 1rem;
 }
