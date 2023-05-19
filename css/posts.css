@@ -8,12 +8,14 @@
 
 .posts {
   display: grid;
+  padding-top: 2rem;
 }
 
 .post {
   background-color: #0b515f;
   padding: 1rem;
   border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
 
 .view-more {
@@ -27,6 +29,7 @@
   margin-bottom: 10px;
   cursor: pointer;
   font-size: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
 
 .view-less {
@@ -40,4 +43,5 @@
   margin-bottom: 10px;
   cursor: pointer;
   font-size: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }

@@ -1,3 +1,11 @@
+.post-content {
+  padding-top: 2rem;
+}
+
+.post-content img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
 .wp-block-image {
   width: 100%;
   margin: auto;
@@ -16,4 +24,5 @@ p {
   padding: 1rem;
   border-radius: 10px;
   text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
