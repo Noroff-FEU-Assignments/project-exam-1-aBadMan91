@@ -143,11 +143,8 @@
   }
 
   .about-container {
-    background-color: #0b515f;
     display: flex;
-    padding: 1rem;
-    border-radius: 0 0 1rem 1rem;
-    gap: 1rem;
+    flex-direction: row;
   }
 
   .about-text {
