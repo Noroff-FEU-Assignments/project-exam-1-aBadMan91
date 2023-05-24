@@ -42,7 +42,7 @@ function createHtml(posts) {
           <div class="post">
               <a href="posts/postspecific.html?id=${post.id}&name=${post.title.rendered}">
                   <img src="${post.featured_media_src_url}" alt="${post.title.rendered}" class="postThumbnails">
-                  <h3>${post.title.rendered}</h3>
+                  <h2>${post.title.rendered}</h2>
               </a>
           </div>`;
   });
