@@ -5,7 +5,7 @@
 body {
   font-family: "Roboto", sans-serif;
   min-height: 100vh;
-  margin: 0;
+  margin: auto 0;
   border: 0;
   padding: 0;
   background-color: #0e2f35;
@@ -16,6 +16,12 @@ body {
     "header header"
     "main main"
     "footer footer";
+}
+
+.container {
+  margin: 0 auto;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
 }
 
 h1 {
@@ -62,6 +68,7 @@ main {
 footer {
   grid-area: footer;
   text-align: center;
+  padding: 1rem;
 }
 
 header,
@@ -138,10 +145,4 @@ nav li {
 
 .active {
   text-decoration: underline;
-}
-
-.container {
-  margin: 0 auto;
-  padding-top: 4rem;
-  padding-bottom: 1rem;
 }
