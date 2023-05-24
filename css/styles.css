@@ -102,6 +102,10 @@ nav li {
   font-size: large;
 }
 
+nav li:hover {
+  opacity: 0.5;
+}
+
 #hamburger-menu {
   display: none;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
@@ -117,6 +121,11 @@ nav li {
 .fa-bars {
   cursor: pointer;
   padding-right: 50px;
+}
+
+.fas:hover,
+.fa-bars:hover {
+  opacity: 0.5;
 }
 
 .header-nav {
@@ -141,6 +150,10 @@ nav li {
   padding: 1rem;
   font-size: x-large;
   font-weight: bold;
+}
+
+.header-name:hover {
+  opacity: 0.5;
 }
 
 .active {
