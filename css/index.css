@@ -1,3 +1,7 @@
+.featured h1 {
+  padding: 0.5rem;
+}
+
 .featured-post {
   background-color: #0b515f;
   border-radius: 10px;
@@ -13,6 +17,10 @@
 
 .featured-post h3 {
   padding: 0px 0px 20px 10px;
+}
+
+.latest-posts h2 {
+  padding: 0.5rem;
 }
 
 .carousel-wrapper {
@@ -61,6 +69,10 @@
 .prev-btn:hover,
 .next-btn:hover {
   opacity: 0.7;
+}
+
+.more-posts h3 {
+  padding: 0.5rem;
 }
 
 .other-posts {

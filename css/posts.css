@@ -2,6 +2,10 @@
   padding-top: 4rem;
 }
 
+.container h1 {
+  padding: 0.5rem;
+}
+
 .per-page {
   margin-bottom: 1rem;
 }
