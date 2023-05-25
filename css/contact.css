@@ -3,7 +3,7 @@
   width: 360px;
   margin: auto;
   padding: 2rem;
-  border-radius: 1rem;
+  border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -46,6 +46,7 @@
 
 .form-button:hover {
   opacity: 0.7;
+  border-radius: 5px;
 }
 
 .form-error {
@@ -69,7 +70,7 @@
   background-color: #4e8010;
   padding: 1rem;
   color: #fff;
-  border-radius: 1rem;
+  border-radius: 10px;
   margin-bottom: 1rem;
   text-align: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
@@ -91,4 +92,5 @@
 
 .contact-back_home:hover {
   opacity: 0.7;
+  border-radius: 5px;
 }

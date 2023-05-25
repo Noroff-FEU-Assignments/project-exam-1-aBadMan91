@@ -89,7 +89,7 @@ nav {
   text-align: center;
   width: 100%;
   top: 50px;
-  border-radius: 0.5rem;
+  border-radius: 10px;
 }
 
 nav ul {
@@ -120,7 +120,7 @@ nav li:hover {
 .fas,
 .fa-bars {
   cursor: pointer;
-  padding-right: 50px;
+  margin-right: 50px;
 }
 
 .fas:hover,
