@@ -12,8 +12,6 @@ async function fetchPosts(url) {
 
         const getPosts = await response.json();
 
-        console.log(getPosts);
-
         createHtml(getPosts);
     }
 

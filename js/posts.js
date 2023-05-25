@@ -17,8 +17,6 @@ async function fetchPosts(url) {
 
       const getPosts = await response.json();
 
-      console.log(getPosts);
-
       createHtml(getPosts);
 
       if (getPosts.length < 10 && currentPage === 1) {

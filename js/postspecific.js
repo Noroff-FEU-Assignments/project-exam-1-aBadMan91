@@ -15,13 +15,11 @@ async function getPost() {
 
         const post = await response.json();
 
-        console.log(url)
-
         createHtml(post);
     }
 
     catch (error) {
-        console.log(error)
+        console.log(error);
         detailContainer.innerHTML = alert("error, couldn't load page correctly", error);
     }
 }
